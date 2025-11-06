@@ -1,0 +1,8 @@
+# Entorno virtual de Python
+ia_env/
+__pycache__/
+*.pyc
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
