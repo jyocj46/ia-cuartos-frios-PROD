@@ -25,7 +25,7 @@ def get_model_for_cuarto(cuarto_id):
     # El modelo no está en caché, hay que cargarlo
     cuarto_path = os.path.join(MODEL_REGISTRY_PATH, f'cuarto_{cuarto_key}')
     model_path = os.path.join(cuarto_path, 'modelo_autoencoder_frio_REAL.h5')
-    scaler_path = os.path.join(cuarto_path, 'scaler_frio_REAL.g')
+    scaler_path = os.path.join(cuarto_path, 'scaler_frio_REAL.gz')
     umbral_path = os.path.join(cuarto_path, 'umbral.txt')
 
     if not all([os.path.exists(p) for p in [model_path, scaler_path, umbral_path]]):
