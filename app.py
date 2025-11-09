@@ -33,7 +33,7 @@ def get_model_for_cuarto(cuarto_id):
         return None
 
     try:
-        model = load_model(model_path)
+        model = load_model(model_path, compile=False)
         scaler = joblib.load(scaler_path)
         with open(umbral_path, 'r') as f:
             umbral = float(f.read().strip())
